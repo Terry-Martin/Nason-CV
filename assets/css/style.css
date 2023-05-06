@@ -180,6 +180,7 @@ footer {
     color: #fafafa;
     min-height: 120px;
     margin: 0;
+    text-decoration: none;
 }
 
 .cv-pdf i {
@@ -199,19 +200,21 @@ footer {
 
 .social-links {
     padding-bottom: 15px;
+
 }
 
 .social-links li {
-    font-size: 100px;
-    width: 32px;
-    height: 32px;
-    padding: 12px 0;
+
+    width: 42px;
+    height: 42px;
+    padding: 4px 0;
     border-radius: 50%;
-    font-size: 13px;
+    font-size: 30px;
+    text-decoration: none;
     line-height: 7px;
     text-align: center;
     color: #fafafa;
-    background: #8f8f8f;
+    background: black;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
@@ -220,6 +223,7 @@ footer {
 
 .social-links li:hover {
     background: #e84610;
+    text-decoration: none;
 }
 
 #footer-details {
@@ -369,5 +373,47 @@ button[type="submit"] {
         min-height: 240px;
         margin: 0 auto;
         max-width: 50%;
+    }
+}
+
+/* ---------------Gallery */
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
     }
 }
